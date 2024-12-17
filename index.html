@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <style>
+    /* 스타일링 설정 */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #F5F5F5;
+    }
+    h1 {
+      text-align: left;
+      margin: 10px 0;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3x3 그리드 */
+      gap: 40px; /* 이미지 간 간격 */
+      padding: 40px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      transition: transform 0.2s ease-in-out;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>정승민</h1>
+  <div class="gallery">
+    <!-- 이미지 삽입 -->
+    <img src="images/aimg1.jpg" alt="Image 1">
+    <img src="images/aimg9.jpg" alt="Image 2">
+    <img src="images/aimg3.jpg" alt="Image 3">
+    <img src="images/aimg4.jpg" alt="Image 4">
+    <img src="images/aimg5.jpg" alt="Image 5">
+    <img src="images/aimg6.jpg" alt="Image 6">
+    <img src="images/aimg7.jpg" alt="Image 7">
+    <img src="images/aimg8.jpg" alt="Image 8">
+    <img src="images/aimg10.jpg" alt="Image 9">
+  </div>
+</body>
+</html>
