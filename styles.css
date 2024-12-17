@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3x3 Grid Blur Effect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid-container">
+        <!-- 각 이미지와 텍스트를 포함하는 div -->
+        <div class="grid-item">
+            <img src="image1.jpg" alt="Image 1">
+            <p>Amant, Brooklyn, NY</p>
+        </div>
+        <div class="grid-item">
+            <img src="image2.jpg" alt="Image 2">
+            <p>Anima, Chatham, New York</p>
+        </div>
+        <div class="grid-item">
+            <img src="image3.jpg" alt="Image 3">
+            <p>Williams College Museum of Art, MA</p>
+        </div>
+        <div class="grid-item">
+            <img src="image4.jpg" alt="Image 4">
+            <p>Location 4</p>
+        </div>
+        <div class="grid-item">
+            <img src="image5.jpg" alt="Image 5">
+            <p>Location 5</p>
+        </div>
+        <div class="grid-item">
+            <img src="image6.jpg" alt="Image 6">
+            <p>Location 6</p>
+        </div>
+        <div class="grid-item">
+            <img src="image7.jpg" alt="Image 7">
+            <p>Location 7</p>
+        </div>
+        <div class="grid-item">
+            <img src="image8.jpg" alt="Image 8">
+            <p>Location 8</p>
+        </div>
+        <div class="grid-item">
+            <img src="image9.jpg" alt="Image 9">
+            <p>Location 9</p>
+        </div>
+    </div>
+</body>
+</html>
