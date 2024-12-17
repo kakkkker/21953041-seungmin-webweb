@@ -1,50 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3x3 Grid Blur Effect</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="grid-container">
-        <!-- 각 이미지와 텍스트를 포함하는 div -->
-        <div class="grid-item">
-            <img src="image1.jpg" alt="Image 1">
-            <p>Amant, Brooklyn, NY</p>
-        </div>
-        <div class="grid-item">
-            <img src="image2.jpg" alt="Image 2">
-            <p>Anima, Chatham, New York</p>
-        </div>
-        <div class="grid-item">
-            <img src="image3.jpg" alt="Image 3">
-            <p>Williams College Museum of Art, MA</p>
-        </div>
-        <div class="grid-item">
-            <img src="image4.jpg" alt="Image 4">
-            <p>Location 4</p>
-        </div>
-        <div class="grid-item">
-            <img src="image5.jpg" alt="Image 5">
-            <p>Location 5</p>
-        </div>
-        <div class="grid-item">
-            <img src="image6.jpg" alt="Image 6">
-            <p>Location 6</p>
-        </div>
-        <div class="grid-item">
-            <img src="image7.jpg" alt="Image 7">
-            <p>Location 7</p>
-        </div>
-        <div class="grid-item">
-            <img src="image8.jpg" alt="Image 8">
-            <p>Location 8</p>
-        </div>
-        <div class="grid-item">
-            <img src="image9.jpg" alt="Image 9">
-            <p>Location 9</p>
-        </div>
-    </div>
-</body>
-</html>
+/* 전체 페이지 설정 */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* 3x3 그리드 레이아웃 */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 90vw;
+    max-width: 800px;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    transition: filter 0.3s ease;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.grid-item p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    font-size: 14px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
+
+/* 호버 시 블러 효과 */
+.grid-container:hover .grid-item {
+    filter: blur(5px);
+}
+
+.grid-container .grid-item:hover {
+    filter: blur(0);
+    z-index: 1; /* 선택된 이미지가 위로 올라오게 */
+}
