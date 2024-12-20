@@ -58,3 +58,15 @@ body {
 .grid-container .grid-item:hover img {
     transform: scale(2); /* 이미지 확대 */
 }
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    transform-origin: center center; /* 확대 기준을 중앙으로 설정 */
+}
+
+.grid-container .grid-item:hover img {
+    transform: scale(2); /* 이미지 2배 확대 */
+}
