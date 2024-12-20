@@ -46,7 +46,7 @@ body {
 /* 블러 효과와 옅은 분홍색 배경 */
 .grid-container:hover .grid-item {
     filter: blur(5px);
-    background-color: rgba(255, 182, 193, 0.3); /* 옅은 분홍색 */
+    background-color: rgba(255, 182, 193, 0.7); /* 옅은 분홍색 */
 }
 
 .grid-container .grid-item:hover {
