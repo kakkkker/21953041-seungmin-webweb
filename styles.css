@@ -51,7 +51,7 @@ body {
 
 .grid-container .grid-item:hover {
     filter: blur(0);
-    transform: scale(1.1); /* 그리드 아이템 확대 */
+    transform: scale(2.5); /* 그리드 아이템 확대 */
     z-index: 2;
     background-color: transparent; /* 블러 해제 시 배경색 제거 */
 }
