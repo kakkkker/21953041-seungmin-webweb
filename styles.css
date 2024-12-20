@@ -1,4 +1,4 @@
-/* 전체 페이지 설정 */
+/* 전체 페이지 스타일 */
 body {
     margin: 0;
     display: flex;
@@ -9,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* 3x3 그리드 레이아웃 */
+/* 3x3 그리드 설정 */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -21,14 +21,14 @@ body {
 .grid-item {
     position: relative;
     overflow: hidden;
-    transition: filter 0.3s ease;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .grid-item img {
     width: 100%;
     height: auto;
-    display: block;
     object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 .grid-item p {
@@ -40,14 +40,21 @@ body {
     color: white;
     background: rgba(0, 0, 0, 0.5);
     padding: 5px;
+    z-index: 1;
 }
 
-/* 호버 시 블러 효과 */
+/* 블러 효과 */
 .grid-container:hover .grid-item {
     filter: blur(5px);
 }
 
 .grid-container .grid-item:hover {
     filter: blur(0);
-    z-index: 1; /* 선택된 이미지가 위로 올라오게 */
+    transform: scale(1.1); /* 그리드 아이템 확대 */
+    z-index: 2;
+}
+
+/* 이미지 확대 */
+.grid-container .grid-item:hover img {
+    transform: scale(1.2); /* 이미지 확대 */
 }
