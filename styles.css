@@ -54,11 +54,6 @@ body {
     z-index: 2;
 }
 
-/* 이미지 확대 */
-.grid-container .grid-item:hover img {
-    transform: scale(2); /* 이미지 확대 */
-}
-
 .grid-item img {
     width: 100%;
     height: auto;
